@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=JetBrains+Mono:wght@400&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box
+}
+
+body {
+  margin: 0
+}
+
+
+.bg {
+  min-height: 100vh;
+  background: #f0f2f8;
+  position: relative;
+  padding-bottom: 30px;
+  overflow-x: hidden
+}
+
+
+.bg::before {
+  content: '<html> <body> .CSE{ } finalYear = true; function placement(){} const skills = ["React","Python","DSA"]; </body> </html> 101010 CSE FINAL YEAR PROJECT';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: rgba(102, 126, 234, 0.04);
+  line-height: 2.5;
+  word-spacing: 15px;
+  white-space: pre-wrap;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.top {
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden
+}
+
+
+.top::before, .top::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out
+}
+.top::before { top: -100px; left: -80px }
+.top::after { bottom: -120px; right: -80px; animation-delay: 2s }
+
+.top h1 {
+  font-size: 2.6rem;
+  margin: 0;
+  position: relative;
+  z-index: 2
+}
+
+.top h1::after {
+  content: 'CSE • 8th Sem • Final Year Project 2026';
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 8px;
+  letter-spacing: 2px;
+  font-family: 'JetBrains Mono', monospace
+}
+
+.mainSearch {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 550px;
+  padding: 16px 24px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #222;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 2
+}
+
+.container {
+  max-width: 1300px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr;
+  gap: 25px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1
+}
+
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  animation: up 0.5s ease;
+  border-top: 4px solid #667eea;
+  position: relative
+}
+
+.card::before {
+  content: 'B.TECH CSE';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.6rem;
+  background: #0f0c29;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 10px;
+  letter-spacing: 1px
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15)
+}
+
+.cardImg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #eef2ff
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.avatarText {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700
+}
+
+.card h4 {
+  margin: 5px 0;
+  color: #222
+}
+
+.small {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 3px 0
+}
+
+.skills {
+  font-size: 0.85rem;
+  background: linear-gradient(135deg, #f5f7ff, #eef2ff);
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  color: #333;
+  border-left: 3px solid #667eea
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0
+}
+
+.btns a {
+  font-size: 0.8rem;
+  background: #0f0c29;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none
+}
+
+.del {
+  width: 100%;
+  background: #ffeef0;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: #ff4d6d;
+  cursor: pointer;
+  font-weight: 600
+}
+
+.right {
+  position: sticky;
+  top: 20px;
+  height: fit-content
+}
+
+.formBox {
+  background: white;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border: 1px solid #eef2ff
+}
+
+.formBox h3 {
+  text-align: center;
+  margin-top: 0;
+  color: #0f0c29;
+  position: relative
+}
+
+.formBox h3::after {
+  content: 'Final Year Student Entry';
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #888;
+  margin-top: 4px
+}
+
+.formBox label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 10px;
+  display: block
+}
+
+.formBox input,
+.formBox select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 2px solid #e8eaf0;
+  outline: none;
+  background: white !important;
+  color: #222 !important;
+  font-size: 0.95rem
+}
+
+.formBox input:focus {
+  border-color: #667eea
+}
+
+.row {
+  display: flex;
+  gap: 10px
+}
+
+.preview {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px auto;
+  display: block;
+  border: 3px solid #667eea
+}
+
+.formBox button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s
+}
+
+.formBox button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102,126,234,0.4)
+}
+
+
+.emptyState {
+  text-align: center;
+  padding: 70px 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  animation: up 0.6s ease;
+  border: 2px dashed #e0e6ff;
+  position: relative
+}
+
+.emptyState::before {
+  content: '/* Final Year CSE Student Database */';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: #aab
+}
+
+.bigIcon {
+  font-size: 4rem;
+  margin-bottom: 10px
+}
+
+.count {
+  margin-top: 20px;
+  background: #0f0c29;
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: white !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem
+}
+
+.no {
+  color: #666;
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 15px
+}
+
+@keyframes up {
+  from { opacity: 0; transform: translateY(20px) }
+  to { opacity: 1; transform: translateY(0) }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1) }
+  50% { transform: translateY(-20px) scale(1.05) }
+}
+
+@media(max-width:900px) {
+  .container { grid-template-columns: 1fr }
+  .right { position: static }
+  .top h1 { font-size: 2rem }
+}
